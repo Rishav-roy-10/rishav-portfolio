@@ -2,10 +2,10 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Eye } from "lucide-react";
-import todoApp from "@/assets/todo-app.jpg";
-import passwordGenerator from "@/assets/password-generator.jpg";
-import weatherApp from "@/assets/weather-app.jpg";
-import qrGenerator from "@/assets/qr-generator.jpg";
+import todoApp from "@/assets/todo-app.png";
+import passwordGenerator from "@/assets/password-generator.png";
+import weatherApp from "@/assets/weather-app.png";
+import qrGenerator from "@/assets/qr-generator.png";
 
 const Projects = () => {
   const projects = [
