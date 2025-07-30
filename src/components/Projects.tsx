@@ -2,40 +2,48 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Eye } from "lucide-react";
+import todoApp from "@/assets/todo-app.jpg";
+import passwordGenerator from "@/assets/password-generator.jpg";
+import weatherApp from "@/assets/weather-app.jpg";
+import qrGenerator from "@/assets/qr-generator.jpg";
 
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
-      liveUrl: "https://example.com",
+      title: "TO-DO-List App",
+      description: "A clean and intuitive task management application with add, delete, and mark complete functionality. Features a modern UI with smooth animations and local storage.",
+      technologies: ["React", "JavaScript", "CSS3", "Local Storage"],
+      image: todoApp,
+      liveUrl: "https://rishav-roy-10.github.io/To-do-list/",
       githubUrl: "https://github.com",
       status: "Completed"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with Next.js and Supabase.",
-      technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Realtime"],
-      liveUrl: "https://example.com",
-      githubUrl: "https://github.com",
-      status: "In Progress"
-    },
-    {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that displays current weather conditions and forecasts using external APIs. Includes location search and favorite locations.",
-      technologies: ["React", "Weather API", "Chart.js", "CSS Modules"],
-      liveUrl: "https://example.com", 
+      title: "Password Generator",
+      description: "A secure random password generator with customizable length and character options. Features copy-to-clipboard functionality and strength indicators.",
+      technologies: ["JavaScript", "HTML5", "CSS3", "Crypto API"],
+      image: passwordGenerator,
+      liveUrl: "https://rishav-roy-10.github.io/Password-generator/",
       githubUrl: "https://github.com",
       status: "Completed"
     },
     {
-      title: "Personal Blog Platform",
-      description: "A modern blog platform with markdown support, SEO optimization, and a content management system. Features dark/light mode and responsive design.",
-      technologies: ["Next.js", "MDX", "Prisma", "PostgreSQL", "Vercel"],
-      liveUrl: "https://example.com",
+      title: "Weather App",
+      description: "A responsive weather application that displays current weather conditions with beautiful gradients. Features city search, humidity, and wind speed data.",
+      technologies: ["React", "Weather API", "CSS3", "Geolocation API"],
+      image: weatherApp,
+      liveUrl: "https://rishav-roy-10.github.io/Weather-App/", 
       githubUrl: "https://github.com",
-      status: "Planning"
+      status: "Completed"
+    },
+    {
+      title: "QR Code Generator",
+      description: "A simple QR code generator that converts text or URLs into QR codes. Features instant generation, downloadable codes, and responsive design.",
+      technologies: ["JavaScript", "QR.js Library", "HTML5", "CSS3"],
+      image: qrGenerator,
+      liveUrl: "https://rishav-roy-10.github.io/QR-code-generetor/",
+      githubUrl: "https://github.com",
+      status: "Completed"
     }
   ];
 
@@ -70,6 +78,13 @@ const Projects = () => {
               key={index} 
               className="card-glow border-border/50 bg-card/50 backdrop-blur-sm hover:animate-glow transition-all duration-300 group"
             >
+              <div className="relative overflow-hidden rounded-t-lg">
+                <img 
+                  src={project.image} 
+                  alt={project.title}
+                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <div className="flex justify-between items-start mb-2">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">

@@ -55,7 +55,7 @@ const About = () => {
             <div className="flex justify-center lg:justify-start mb-8">
               <Avatar className="h-48 w-48 border-4 border-primary/20 shadow-xl">
                 <AvatarImage 
-                  src={profilePhoto} 
+                  src="/lovable-uploads/9fa23230-01ae-4eed-896c-f94a617a9e93.png" 
                   alt="Rishav Roy" 
                   className="object-cover"
                 />
