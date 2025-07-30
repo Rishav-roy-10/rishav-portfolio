@@ -6,36 +6,36 @@ import { ExternalLink, Github, Eye } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce application built with React, Node.js, and MongoDB. Features include user authentication, shopping cart, payment integration, and admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Express", "Stripe API"],
+      title: "TO-DO-List App",
+      description: "A clean and intuitive task management application with add, delete, and mark complete functionality. Features a modern UI with smooth animations and local storage.",
+      technologies: ["React", "JavaScript", "CSS3", "Local Storage"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
       status: "Completed"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features. Built with Next.js and Supabase.",
-      technologies: ["Next.js", "TypeScript", "Supabase", "Tailwind CSS", "Realtime"],
+      title: "Password Generator",
+      description: "A secure random password generator with customizable length and character options. Features copy-to-clipboard functionality and strength indicators.",
+      technologies: ["JavaScript", "HTML5", "CSS3", "Crypto API"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
-      status: "In Progress"
+      status: "Completed"
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application that displays current weather conditions and forecasts using external APIs. Includes location search and favorite locations.",
-      technologies: ["React", "Weather API", "Chart.js", "CSS Modules"],
+      title: "Weather App",
+      description: "A responsive weather application that displays current weather conditions with beautiful gradients. Features city search, humidity, and wind speed data.",
+      technologies: ["React", "Weather API", "CSS3", "Geolocation API"],
       liveUrl: "https://example.com", 
       githubUrl: "https://github.com",
       status: "Completed"
     },
     {
-      title: "Personal Blog Platform",
-      description: "A modern blog platform with markdown support, SEO optimization, and a content management system. Features dark/light mode and responsive design.",
-      technologies: ["Next.js", "MDX", "Prisma", "PostgreSQL", "Vercel"],
+      title: "QR Code Generator",
+      description: "A simple QR code generator that converts text or URLs into QR codes. Features instant generation, downloadable codes, and responsive design.",
+      technologies: ["JavaScript", "QR.js Library", "HTML5", "CSS3"],
       liveUrl: "https://example.com",
       githubUrl: "https://github.com",
-      status: "Planning"
+      status: "Completed"
     }
   ];
 
