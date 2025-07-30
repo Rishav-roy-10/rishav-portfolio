@@ -27,8 +27,7 @@ const Skills = () => {
       icon: <Server className="h-6 w-6" />,
       skills: [
         { name: "Node.js", level: 75 },
-        { name: "Express.js", level: 70 },
-        { name: "API Development", level: 75 }
+        { name: "Express.js", level: 70 }
       ]
     },
     {
@@ -45,16 +44,14 @@ const Skills = () => {
       icon: <Settings className="h-6 w-6" />,
       skills: [
         { name: "Git & GitHub", level: 80 },
-        { name: "VS Code", level: 90 },
-        { name: "Linux", level: 65 },
-        { name: "Responsive Design", level: 80 }
+        { name: "VS Code", level: 90 }
       ]
     }
   ];
 
   const technologies = [
     "React", "JavaScript", "Node.js", "Express.js", "HTML/CSS",
-    "MongoDB", "PostgreSQL", "Tailwind CSS", "Git", "API Development"
+    "MongoDB", "PostgreSQL", "Tailwind CSS", "Git"
   ];
 
   return (
