@@ -41,7 +41,7 @@ const Footer = () => {
                 <Linkedin className="h-5 w-5" />
               </a>
               <a 
-                href="mailto:rishav.roy@example.com"
+                href="mailto:rishavgames04@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110 transform"
                 aria-label="Email"
               >
@@ -75,7 +75,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold">Get In Touch</h4>
             <div className="space-y-2 text-muted-foreground">
-              <p>rishav.roy@example.com</p>
+              <p>rishavgames04@gmail.com</p>
               <p>Available for freelance work</p>
               <p>Open to new opportunities</p>
             </div>
