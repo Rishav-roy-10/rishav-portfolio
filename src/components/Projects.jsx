@@ -4,8 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Github, Eye } from "lucide-react";
 import todoApp from "@/assets/todo-app.png";
 import passwordGenerator from "@/assets/password-generator.png";
-import weatherApp from "@/assets/weather-app.png";
-import qrGenerator from "@/assets/qr-generator.png";
+import weatherApp from "@/assets/Weather-app.png";
+import qrGenerator from "@/assets/QR-generator.png";
 
 const Projects = () => {
   const projects = [
