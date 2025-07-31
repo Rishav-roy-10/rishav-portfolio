@@ -86,13 +86,13 @@ const Contact = () => {
     {
       icon: <Linkedin className="h-6 w-6" />,
       label: "LinkedIn", 
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/rishav-roy-33382b33a",
       color: "hover:text-blue-400"
     },
     {
       icon: <Twitter className="h-6 w-6" />,
       label: "Twitter",
-      href: "https://twitter.com",
+      href: "https://x.com/Rishav_roy__10",
       color: "hover:text-blue-400"
     }
   ];
