@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Key } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -69,6 +70,12 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
+              <Link to="/password-manager">
+                <Button variant="outline" size="sm" className="ml-4">
+                  <Key className="h-4 w-4 mr-2" />
+                  Password Manager
+                </Button>
+              </Link>
             </div>
           </div>
 
