@@ -81,84 +81,96 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <Card 
-              key={index} 
-              className="card-glow border-border/50 bg-card/50 backdrop-blur-sm hover:animate-glow transition-all duration-300 group"
-            >
-              <div className="relative overflow-hidden rounded-t-lg">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-                />
-              </div>
-              <CardHeader>
-                <div className="flex justify-between items-start mb-2">
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {project.title}
-                  </CardTitle>
-                  <Badge 
-                    variant="outline" 
-                    className={`${getStatusColor(project.status)} border`}
-                  >
-                    {project.status}
-                  </Badge>
+        <div className="relative">
+          <div className="flex space-x-6 overflow-x-auto scrollbar-hide pb-4 snap-x snap-mandatory">
+            {projects.map((project, index) => (
+              <Card 
+                key={index} 
+                className="card-glow border-border/50 bg-card/50 backdrop-blur-sm hover:animate-glow transition-all duration-300 group flex-shrink-0 w-80 snap-start"
+              >
+                <div className="relative overflow-hidden rounded-t-lg">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
                 </div>
-              </CardHeader>
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground leading-relaxed">
-                  {project.description}
-                </p>
-
-                <div className="flex flex-wrap gap-2">
-                  {project.technologies.map((tech, techIndex) => (
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <CardTitle className="text-xl group-hover:text-primary transition-colors">
+                      {project.title}
+                    </CardTitle>
                     <Badge 
-                      key={techIndex} 
-                      variant="secondary" 
-                      className="bg-secondary/80 text-xs"
+                      variant="outline" 
+                      className={`${getStatusColor(project.status)} border`}
                     >
-                      {tech}
+                      {project.status}
                     </Badge>
-                  ))}
-                </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
 
-                <div className="flex space-x-3 pt-4">
-                  <Button 
-                    variant="portfolio" 
-                    size="sm" 
-                    asChild
-                  >
-                    <a 
-                      href={project.liveUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2"
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <Badge 
+                        key={techIndex} 
+                        variant="secondary" 
+                        className="bg-secondary/80 text-xs"
+                      >
+                        {tech}
+                      </Badge>
+                    ))}
+                  </div>
+
+                  <div className="flex space-x-3 pt-4">
+                    <Button 
+                      variant="portfolio" 
+                      size="sm" 
+                      asChild
                     >
-                      <Eye className="h-4 w-4" />
-                      <span>Live Demo</span>
-                    </a>
-                  </Button>
-                  <Button 
-                    variant="outline" 
-                    size="sm" 
-                    asChild
-                  >
-                    <a 
-                      href={project.githubUrl} 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2"
+                      <a 
+                        href={project.liveUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2"
+                      >
+                        <Eye className="h-4 w-4" />
+                        <span>Live Demo</span>
+                      </a>
+                    </Button>
+                    <Button 
+                      variant="outline" 
+                      size="sm" 
+                      asChild
                     >
-                      <Github className="h-4 w-4" />
-                      <span>Code</span>
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+                      <a 
+                        href={project.githubUrl} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-2"
+                      >
+                        <Github className="h-4 w-4" />
+                        <span>Code</span>
+                      </a>
+                    </Button>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+          
+          {/* Scroll indicator */}
+          <div className="flex justify-center mt-6 space-x-2">
+            {projects.map((_, index) => (
+              <div 
+                key={index} 
+                className="w-2 h-2 rounded-full bg-muted-foreground/30"
+              />
+            ))}
+          </div>
         </div>
 
         <div className="text-center mt-12">
