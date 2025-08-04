@@ -10,6 +10,15 @@ import qrGenerator from "@/assets/QR-generator.png";
 const Projects = () => {
   const projects = [
     {
+      title: "Password Manager",
+      description: "A secure password management application with local storage functionality. Features password generation, copy-to-clipboard, and encrypted storage for managing all your credentials safely.",
+      technologies: ["React", "Local Storage", "Tailwind CSS", "TypeScript"],
+      image: "/lovable-uploads/65a62005-1811-4946-bc8d-54f028724671.png",
+      liveUrl: "/password-manager",
+      githubUrl: "https://github.com",
+      status: "Completed"
+    },
+    {
       title: "TO-DO-List App",
       description: "A clean and intuitive task management application with add, delete, and mark complete functionality. Features a modern UI with smooth animations and local storage.",
       technologies: ["React", "JavaScript", "CSS3", "Local Storage"],
