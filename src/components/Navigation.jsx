@@ -70,12 +70,12 @@ const Navigation = () => {
                   {item.label}
                 </button>
               ))}
-              <Link to="/password-manager">
+              {/* <Link to="/password-manager">
                 <Button variant="outline" size="sm" className="ml-4">
                   <Key className="h-4 w-4 mr-2" />
                   Password Manager
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
 
@@ -116,4 +116,4 @@ const Navigation = () => {
   );
 };
 
-export default Navigation; 
+export default Navigation;
