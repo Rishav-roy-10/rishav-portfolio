@@ -14,7 +14,7 @@ const Projects = () => {
       description: "A secure password management application with local storage functionality. Features password generation, copy-to-clipboard, and encrypted storage for managing all your credentials safely.",
       technologies: ["React", "Local Storage", "Tailwind CSS", "TypeScript"],
       image: "/lovable-uploads/65a62005-1811-4946-bc8d-54f028724671.png",
-      liveUrl: "/password-manager",
+      liveUrl: "https://password-manager-eta-sage.vercel.app/",
       githubUrl: "https://github.com",
       status: "Completed"
     },
